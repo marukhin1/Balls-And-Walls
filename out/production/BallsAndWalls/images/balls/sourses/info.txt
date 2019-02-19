@@ -1,0 +1,9 @@
+Size for game: 40px
+Size for settings: 130px
+
+Black: 000000
+Pink: FF1493
+Red: B22222
+Green: 228B22
+Blue: 0000FF
+Orange: DAA520

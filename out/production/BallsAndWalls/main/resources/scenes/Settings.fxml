@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.SettingsController">
+   <children>
+      <Label layoutX="263.0" layoutY="14.0" text="Настройки">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="140.0" layoutY="49.0" text="Мяч">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <SplitPane layoutX="75.0" layoutY="74.0" prefHeight="180.0" prefWidth="180.0">
+         <items>
+            <Canvas fx:id="settingsBallCanvas" height="180.0" width="180.0" />
+         </items></SplitPane>
+      <Label layoutX="65.0" layoutY="273.0" text="Вид" />
+      <ChoiceBox fx:id="ballType" layoutX="97.0" layoutY="270.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label layoutX="65.0" layoutY="304.0" text="Цвет" />
+      <ChoiceBox fx:id="ballColor" layoutX="97.0" layoutY="301.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label layoutX="426.0" layoutY="49.0" text="Стена">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <SplitPane layoutX="352.0" layoutY="74.0" prefHeight="180.0" prefWidth="180.0">
+         <items>
+            <Canvas fx:id="settingsWallCanvas" height="180.0" width="180.0" />
+         </items></SplitPane>
+      <Label layoutX="335.0" layoutY="270.0" text="Вид" />
+      <ChoiceBox fx:id="wallType" layoutX="367.0" layoutY="267.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label layoutX="335.0" layoutY="301.0" text="Цвет" />
+      <ChoiceBox fx:id="wallColor" layoutX="367.0" layoutY="298.0" prefHeight="25.0" prefWidth="168.0" />
+      <Button fx:id="settingsReturnButton" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#actionSettingsReturnButton" prefHeight="20.0" prefWidth="50.0" text="Назад" />
+      <Button fx:id="settingsSaveButton" layoutX="512.0" layoutY="361.0" mnemonicParsing="false" onAction="#actionSettingsSaveButton" prefHeight="25.0" prefWidth="74.0" text="Сохранить" />
+   </children>
+</Pane>
